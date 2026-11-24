@@ -1,0 +1,37 @@
+{
+  "version": "DEMO-V1",
+  "apis": [
+    {
+      "id": "CARD-001",
+      "path": "/demo/card",
+      "method": "GET",
+      "request": [],
+      "response": [],
+      "errors": []
+    },
+    {
+      "id": "BANK-001",
+      "path": "/demo/bank",
+      "method": "GET",
+      "request": [],
+      "response": [],
+      "errors": []
+    },
+    {
+      "id": "SECURITIES-001",
+      "path": "/demo/securities",
+      "method": "GET",
+      "request": [],
+      "response": [],
+      "errors": []
+    },
+    {
+      "id": "INS-001",
+      "path": "/demo/ins",
+      "method": "GET",
+      "request": [],
+      "response": [],
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "SYN-GOV-CHANGE-001",
+  "version": "1.0",
+  "routing": [
+    {
+      "id": "LEGAL",
+      "purpose": "법령 해석",
+      "outcomes": [
+        "적용 대상·시행일·경과조치"
+      ],
+      "review_with": {
+        "CARD": "ORG-CARD-LAW",
+        "BANK": "ORG-BANK-LAW",
+        "SECURITIES": "ORG-SECURITIES-LAW",
+        "INS": "ORG-INS-LAW"
+      }
+    },
+    {
+      "id": "COMPLIANCE",
+      "purpose": "규제 준수",
+      "outcomes": [
+        "내부통제 대응과 증적"
+      ],
+      "review_with": {
+        "CARD": "ORG-CARD-COMP",
+        "BANK": "ORG-BANK-COMP",
+        "SECURITIES": "ORG-SECURITIES-COMP",
+        "INS": "ORG-INS-COMP"
+      }
+    },
+    {
+      "id": "SECURITY",
+      "purpose": "기술적 정보보호",
+      "outcomes": [
+        "인증·권한·암호화·로그 검증"
+      ],
+      "review_with": {
+        "CARD": "ORG-CARD-SECARCH",
+        "BANK": "ORG-BANK-SEC",
+        "SECURITIES": "ORG-SECURITIES-SECARCH",
+        "INS": "ORG-INS-SECARCH"
+      }
+    },
+    {
+      "id": "PRIVACY",
+      "purpose": "개인정보 보호",
+      "outcomes": [
+        "전송 범위, 정보 최소화와 제외 항목"
+      ],
+      "review_with": {
+        "CARD": "ORG-CARD-PRIVACY",
+        "BANK": "ORG-BANK-PRIVACY",
+        "SECURITIES": "ORG-SECURITIES-PRIVACY",
+        "INS": "ORG-INS-PRIV"
+      }
+    },
+    {
+      "id": "CONSUMER",
+      "purpose": "금융소비자 보호",
+      "outcomes": [
+        "고객 고지와 접근성, 피해 구제"
+      ],
+      "review_with": {
+        "CARD": "ORG-CARD-PROT",
+        "BANK": "ORG-BANK-PROT",
+        "SECURITIES": "ORG-SECURITIES-PROT",
+        "INS": "ORG-INS-PROT"
+      }
+    },
+    {
+      "id": "MARKETING",
+      "purpose": "대고객 안내",
+      "outcomes": [
+        "고객 안내 문구와 발송 채널"
+      ],
+      "review_with": {
+        "CARD": "ORG-CARD-MKT",
+        "BANK": "ORG-BANK-MKT",
+        "SECURITIES": "ORG-SECURITIES-MKT",
+        "INS": "ORG-INS-MKT"
+      }
+    },
+    {
+      "id": "RISK",
+      "purpose": "운영 위험과 전환",
+      "outcomes": [
+        "장애, 복구 기준과 롤백 계획"
+      ],
+      "review_with": {
+        "CARD": "ORG-CARD-OPRISK",
+        "BANK": "ORG-BANK-OPRISK",
+        "SECURITIES": "ORG-SECURITIES-OPRISK",
+        "INS": "ORG-INS-OPRISK"
+      }
+    },
+    {
+      "id": "AUDIT",
+      "purpose": "독립 감사",
+      "outcomes": [
+        "통제 예외와 배포 증적 독립 점검"
+      ],
+      "review_with": {
+        "CARD": "ORG-CARD-AUD",
+        "BANK": "ORG-BANK-AUD",
+        "SECURITIES": "ORG-SECURITIES-AUD",
+        "INS": "ORG-INS-AUD"
+      }
+    }
+  ]
+}

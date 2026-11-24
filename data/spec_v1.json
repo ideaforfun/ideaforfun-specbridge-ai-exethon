@@ -1,0 +1,18 @@
+{
+  "name": "가상 금융 마이데이터 표준 API",
+  "version": "V1",
+  "apis": [
+    {"id": "GET_ACCOUNTS", "method": "GET", "path": "/accounts",
+      "request": [
+        {"name": "org_code", "type": "string", "required": true, "description": "기관 코드"},
+        {"name": "access_token", "type": "string", "required": true, "description": "접근 토큰"}
+      ],
+      "response": [
+        {"name": "account_id", "type": "string", "required": true, "description": "계좌 ID"},
+        {"name": "balance", "type": "string", "required": true, "description": "잔액 문자열"}
+      ],
+      "errors": [
+        {"name": "E401", "type": "string", "required": false, "description": "인증 실패"}
+      ]}
+  ]
+}

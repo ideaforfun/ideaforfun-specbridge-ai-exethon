@@ -1,0 +1,169 @@
+{
+  "id": "PIPA-SELF-2026-36121",
+  "title": "개인정보 보호법 시행령 · 본인정보 전송요구권",
+  "source_url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=283503&viewCls=lsRvsDocInfoR",
+  "milestones": [
+    [
+      "개정령 일반 시행",
+      "2026-08-20"
+    ],
+    [
+      "민간 처리자 제42조의2제1항제1호",
+      "2027-02-20"
+    ]
+  ],
+  "before": {
+    "version": "개정 전 · 2026.05.19 시행본",
+    "clauses": [
+      {
+        "id": "TRANSMITTER",
+        "reference": "제42조의2",
+        "text": "정보전송자의 업권별 기준을 정합니다.",
+        "source_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=286175"
+      },
+      {
+        "id": "SCOPE",
+        "reference": "제42조의4제1항",
+        "text": "본인과 제3자에게 보낼 대상 정보를 함께 규정합니다.",
+        "source_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=286175"
+      },
+      {
+        "id": "REQUEST",
+        "reference": "제42조의5제1항",
+        "text": "요청 목적과 대상 정보를 특정합니다.",
+        "source_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=286175"
+      }
+    ]
+  },
+  "after": {
+    "version": "대통령령 제36121호 · 2026.08.20 일반 시행",
+    "clauses": [
+      {
+        "id": "TRANSMITTER",
+        "reference": "제42조의2 및 부칙",
+        "text": "본인대상정보전송자 기준을 별도로 정하고, 일정 규모 이상 민간 처리자 기준은 2027년 2월 20일 시행됩니다.",
+        "source_url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=283503&viewCls=lsRvsDocInfoR"
+      },
+      {
+        "id": "SCOPE",
+        "reference": "제42조의4제1항",
+        "text": "본인전송정보의 자격 요건과 타인의 권리, 다른 법령이 보호하는 정보, 일방향 암호화 정보 등 제외 범위를 구분합니다.",
+        "source_url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=283503&viewCls=lsRvsDocInfoR"
+      },
+      {
+        "id": "REQUEST",
+        "reference": "제42조의5제1항·제2항",
+        "text": "목적과 대상 특정 요건을 유지하며 사전에 협의한 방식의 대리 요구에 정당한 사유 없는 거절을 제한합니다.",
+        "source_url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=283503&viewCls=lsRvsDocInfoR"
+      },
+      {
+        "id": "DOWNLOAD",
+        "reference": "제42조의6제4항",
+        "text": "본인대상정보전송자는 자신이 관리하는 홈페이지에서 정보주체가 즉시 조회할 수 있는 정보를 안전하게 암호화하여 직접 내려받게 할 수 있습니다.",
+        "source_url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=283503&viewCls=lsRvsDocInfoR"
+      },
+      {
+        "id": "AGENT",
+        "reference": "제42조의6제3항제1호나목·제5항",
+        "text": "대리인 자동화는 사전에 협의한 방식으로 진행하며, 대리인은 해당 정보를 저장하지 않고 본인에게 전달합니다.",
+        "source_url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=283503&viewCls=lsRvsDocInfoR"
+      }
+    ]
+  },
+  "impacts": {
+    "TRANSMITTER": {
+      "title": "전송자·시행 기준",
+      "routes": [
+        "LEGAL",
+        "COMPLIANCE"
+      ],
+      "business": "회사 적용 여부와 분야별 법적 근거",
+      "engineering": "시스템 목록과 처리 규모 자료 정리",
+      "acceptance": [
+        "적용일과 판단 근거 기록"
+      ]
+    },
+    "SCOPE": {
+      "title": "대상 정보와 제외 항목",
+      "routes": [
+        "LEGAL",
+        "COMPLIANCE",
+        "PRIVACY",
+        "SECURITY"
+      ],
+      "business": "전송 항목과 제3자 정보 제외 판단",
+      "engineering": "허용·제외 목록 및 예외 테스트",
+      "acceptance": [
+        "허용·제외 유형별 합성 시험"
+      ]
+    },
+    "REQUEST": {
+      "title": "요청과 대리 절차",
+      "routes": [
+        "LEGAL",
+        "COMPLIANCE",
+        "PRIVACY",
+        "SECURITY",
+        "CONSUMER",
+        "MARKETING"
+      ],
+      "business": "요청 접수·안내 기준",
+      "engineering": "요청 항목과 대리 권한 검증",
+      "acceptance": [
+        "직접·대리 신청과 누락 조건 검증"
+      ]
+    },
+    "DOWNLOAD": {
+      "title": "직접 내려받기 검토",
+      "routes": [
+        "LEGAL",
+        "PRIVACY",
+        "SECURITY",
+        "CONSUMER",
+        "RISK"
+      ],
+      "business": "즉시 조회 가능한 범위와 고객 안내·장애 대응",
+      "engineering": "접근권한, 암호화, 만료, 실패 시 로그 노출을 점검",
+      "acceptance": [
+        "다른 계정의 결과에 접근할 수 없고 만료·실패·복구가 검증된다."
+      ]
+    },
+    "AGENT": {
+      "title": "대리인 자동화와 무저장",
+      "routes": [
+        "LEGAL",
+        "COMPLIANCE",
+        "PRIVACY",
+        "SECURITY",
+        "RISK"
+      ],
+      "business": "사전협의와 대리 범위",
+      "engineering": "캐시·로그에 본문이 남는지 검증",
+      "acceptance": [
+        "사전협의 및 무저장 전달 증적 확인"
+      ]
+    }
+  },
+  "companies": {
+    "CARD": {
+      "name": "라이너카드",
+      "system_id": "SYS-CARD-01",
+      "focus": "승인·매입·정산 기록과 거래 상대방 정보"
+    },
+    "BANK": {
+      "name": "라이너은행",
+      "system_id": "SYS-BANK-01",
+      "focus": "계좌·이체의 거래 상대방 정보와 조회 인증"
+    },
+    "SECURITIES": {
+      "name": "라이너증권",
+      "system_id": "SYS-SECURITIES-01",
+      "focus": "주문·체결·잔고와 별도로 생성된 분석 정보 구분"
+    },
+    "INS": {
+      "name": "라이너보험",
+      "system_id": "SYS-INS-01",
+      "focus": "계약자·피보험자·수익자 관계와 타인 정보·민감정보 구분"
+    }
+  }
+}

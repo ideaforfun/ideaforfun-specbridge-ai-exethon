@@ -1,0 +1,61 @@
+{
+  "version": "DEMO-V2",
+  "apis": [
+    {
+      "id": "CARD-001",
+      "path": "/demo/card",
+      "method": "GET",
+      "request": [],
+      "response": [
+        {
+          "name": "settlement_status",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "BANK-001",
+      "path": "/demo/bank",
+      "method": "GET",
+      "request": [
+        {
+          "name": "page_limit",
+          "type": "integer",
+          "required": true
+        }
+      ],
+      "response": [],
+      "errors": []
+    },
+    {
+      "id": "SECURITIES-001",
+      "path": "/demo/securities",
+      "method": "GET",
+      "request": [],
+      "response": [
+        {
+          "name": "valuation_as_of",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "errors": []
+    },
+    {
+      "id": "INS-001",
+      "path": "/demo/ins",
+      "method": "GET",
+      "request": [],
+      "response": [
+        {
+          "name": "contract_state_reason",
+          "type": "string",
+          "required": false
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

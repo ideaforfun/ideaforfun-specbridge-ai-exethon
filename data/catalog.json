@@ -1,0 +1,23 @@
+{
+  "_notice": "모든 조직과 시스템은 해커톤 데모용 가상 데이터입니다.",
+  "organizations": [
+    {"id":"ORG-API","name":"마이데이터 API개발팀","active":true},
+    {"id":"ORG-APP","name":"모바일앱개발팀","active":true},
+    {"id":"ORG-SEC","name":"인증보안팀","active":true},
+    {"id":"ORG-DATA","name":"데이터플랫폼팀","active":true}
+  ],
+  "systems": [
+    {"id":"SYS-COLLECT","name":"마이데이터 수집 서버","api_ids":["GET_ACCOUNTS"],"owner_org_id":"ORG-API","approved":true,"active":true,"source":"가상 시스템 카탈로그 v1"},
+    {"id":"SYS-APP","name":"자산관리 앱","api_ids":["GET_ACCOUNTS"],"owner_org_id":"ORG-APP","approved":true,"active":true,"source":"가상 시스템 카탈로그 v1"}
+  ],
+  "responsibility_rules": [
+    {"id":"RULE-API-1","org_id":"ORG-API","system_id":"SYS-COLLECT","work_types":["REQUEST_MAPPING","RESPONSE_MAPPING","ERROR_HANDLING","API_LIFECYCLE","DOCUMENTATION_REVIEW"],"role":"R","approved":true,"source":"가상 업무분장표 §2.1"},
+    {"id":"RULE-APP-1","org_id":"ORG-APP","system_id":"SYS-APP","work_types":["RESPONSE_MAPPING","ERROR_HANDLING"],"role":"C","approved":true,"source":"가상 업무분장표 §3.2"},
+    {"id":"RULE-SEC-1","org_id":"ORG-SEC","system_id":"SYS-COLLECT","work_types":["REQUEST_MAPPING","ERROR_HANDLING"],"role":"C","approved":true,"source":"가상 보안 업무분장표 §1.3"}
+  ],
+  "history": [
+    {"api_id":"GET_ACCOUNTS","work_type":"REQUEST_MAPPING","org_id":"ORG-API","ticket":"SYN-101"},
+    {"api_id":"GET_ACCOUNTS","work_type":"RESPONSE_MAPPING","org_id":"ORG-API","ticket":"SYN-102"},
+    {"api_id":"GET_ACCOUNTS","work_type":"ERROR_HANDLING","org_id":"ORG-API","ticket":"SYN-103"}
+  ]
+}
